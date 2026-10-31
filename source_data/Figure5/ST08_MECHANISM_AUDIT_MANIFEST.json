@@ -1,0 +1,29 @@
+{
+  "timestamp_utc": "2026-10-25T12:19:30.487573+00:00",
+  "dataset": "GSE166555",
+  "n_paired_patients": 11,
+  "paired_patient_ids": [
+    "p001",
+    "p008",
+    "p009",
+    "p012",
+    "p013",
+    "p014",
+    "p016",
+    "p017",
+    "p020",
+    "p021",
+    "p025"
+  ],
+  "db_rows": 7561,
+  "mechanism_eligible_db_rows": 3036,
+  "mechanism_linked_target_genes": 624,
+  "paired_fitted_genes": 125,
+  "rankable_targets": 83,
+  "ranked_drug_target_pairs": 415,
+  "filters": "single human protein + curated inhibitory action, exclude flagged toxin/payload / APP context, detected tumor >= threshold, tumor q<0.05, donor directional consistency >= threshold",
+  "mechanism_notes": "Toxin patterns and APP are heuristic safety/relevance filters, not evidence of contraindication. Manual biological review REQUIRED. Tumor source tissue epithelial cells may not all be malignant.",
+  "phase_notes": "Plug-in inferred phase, not observed sampling times; V1 cell-level q is exploratory; per-patient harmonics can be phase-coverage sensitive; centered curves DO NOT show whole baseline expression.",
+  "drug_notes": "Not a treatment ranking, efficacy, tumor specificity, dosing time, or clinical recommendation; ChEMBL max_phase is across indications, not CRC-specific; mechanisms do not guarantee response.",
+  "score_note": "Rank percentiles among qualifying target genes (not molecules), non-clipped distribution; score is descriptive prioritization only"
+}

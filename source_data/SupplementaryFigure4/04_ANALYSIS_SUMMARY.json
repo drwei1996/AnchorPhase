@@ -1,0 +1,21 @@
+{
+  "family_rule": "genes with >=8 paired patients where detect_frac>=0.05 in both conditions",
+  "n_eligible_genes": 6401,
+  "n_q_lt_005": 0,
+  "n_q_lt_025": 190,
+  "class_counts": {
+    "Neither": 2460,
+    "Shared": 1879,
+    "Normal-only": 1046,
+    "Tumor-only": 1016
+  },
+  "median_mean_dA_by_class": {
+    "Neither": 0.011342487043634875,
+    "Normal-only": 0.004891372077479165,
+    "Shared": 0.007059509791225244,
+    "Tumor-only": 0.016088071503459457
+  },
+  "test": "exact paired sign-flip on summed 2D harmonic vector; exhaustive 2^11 when n=11 else 20000 MC; p=(1+#ge)/(1+nperm)",
+  "multiple_testing": "BH across the full eligible family",
+  "phase_rule": "phase displacement summarized only when per-patient amplitude>=0.05 log1p(CP10K) in BOTH conditions (>=6 such patients)"
+}

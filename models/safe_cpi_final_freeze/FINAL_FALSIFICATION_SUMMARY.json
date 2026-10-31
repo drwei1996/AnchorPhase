@@ -1,0 +1,63 @@
+{
+  "real_CPI": {
+    "mean": 0.0027602131886679394,
+    "top40_mean": 0.028812798442335363,
+    "max": 0.0569781146521598,
+    "n_gt_0.01": 416
+  },
+  "F1_permuted": {
+    "n": 20,
+    "mean_of_means": 2.036039355053704e-05,
+    "max_of_top40s": 0.0006724197740131277
+  },
+  "F3_wrong_anchor": {
+    "12": {
+      "mode": "rot",
+      "arg": "12",
+      "mean_cpi": -0.0009548471802688906,
+      "max_cpi": 0.016346412611116294,
+      "top40_mean_cpi": 0.005944508427797712,
+      "n_genes_cpi_gt_0.01": 4
+    },
+    "4": {
+      "mode": "rot",
+      "arg": "4",
+      "mean_cpi": 0.0015169034807345826,
+      "max_cpi": 0.03932678149578057,
+      "top40_mean_cpi": 0.0171465730102666,
+      "n_genes_cpi_gt_0.01": 68
+    },
+    "8": {
+      "mode": "rot",
+      "arg": "8",
+      "mean_cpi": 0.00011181410418227259,
+      "max_cpi": 0.01404343581052159,
+      "top40_mean_cpi": 0.0062329622977542526,
+      "n_genes_cpi_gt_0.01": 4
+    }
+  },
+  "F3_rotation_symmetry_check": [
+    {
+      "mode": "rot",
+      "arg": "12",
+      "mean_cpi": 0.002760213188667988,
+      "max_cpi": 0.056978114652160045,
+      "top40_mean_cpi": 0.028812798442335454,
+      "n_genes_cpi_gt_0.01": 416
+    }
+  ],
+  "F2_matched_panels": {
+    "n": 20,
+    "AE_mean": 1.592134355936055,
+    "AE_min": 1.4870582983963985
+  },
+  "F4_same_vs_crossfit": {
+    "in_sample_mean_IG_panel": 0.017835299544481827,
+    "crossfit_mean_IG_panel": 0.02393148307905109,
+    "optimism_ratio": 0.7452651173171261,
+    "genome_in_sample_vs_crossfit_mean": 0.4674456317278616
+  },
+  "F1_verdict": "PASS",
+  "F3_verdict": "CHECK",
+  "F2_verdict": "PASS"
+}

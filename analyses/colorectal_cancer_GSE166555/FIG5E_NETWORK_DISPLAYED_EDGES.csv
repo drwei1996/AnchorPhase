@@ -1,0 +1,11 @@
+gene,drug_name,mechanism_group,observed_in_input,selection_rule
+ABCB1,ENCEQUIDAR,Exposure / resistance,True,preferred observed
+ABCB1,BIRICODAR,Exposure / resistance,True,preferred observed
+CDA,CEDAZURIDINE,Exposure / resistance,True,preferred observed
+MGLL,ELCUBRAGISTAT,Direct / investigational,True,preferred observed
+PLA2G2A,VARESPLADIB METHYL,Direct / multi-PLA2,True,preferred observed
+PLA2G2A,VARESPLADIB,Direct / multi-PLA2,True,preferred observed
+SLC9A3,SQUALAMINE LACTATE,Non-oncology physiological,True,preferred observed
+SLC9A3,TENAPANOR HYDROCHLORIDE,Non-oncology physiological,True,preferred observed
+MAP2K2,BINIMETINIB,Direct / oncology pathway,True,preferred observed
+MAP2K2,WX-554,Direct / oncology pathway,True,preferred observed

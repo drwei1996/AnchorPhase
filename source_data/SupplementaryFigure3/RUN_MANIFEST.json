@@ -1,0 +1,29 @@
+{
+  "selection": "Tumor-only ORA, combined BH q ascending, fold enrichment descending, overlap descending; top 4, no p-value based reselection",
+  "selection_file": "/mnt/c/Users/zhihao/Documents/ChatGPT/Tabula Sapiens/katv2/16_FIG4_FIG5_APPLICATIONS/GSE166555/FIG4D_UNIQUE_RHYTHMIC_ORA_v2/Tumor_only_ALL_TESTED_pathways.csv",
+  "gmt_dir": "/mnt/c/Users/zhihao/Documents/ChatGPT/Tabula Sapiens/katv2/16_FIG4_FIG5_APPLICATIONS/data",
+  "expression_file": "/mnt/c/Users/zhihao/Documents/ChatGPT/Tabula Sapiens/katv2/16_FIG4_FIG5_APPLICATIONS/GSE166555/anchorphase_project/data/count_matrix.h5ad",
+  "phase_file": "/mnt/c/Users/zhihao/Documents/ChatGPT/Tabula Sapiens/katv2/16_FIG4_FIG5_APPLICATIONS/GSE166555/anchorphase_project/data/PREDICTIONS_BLINDED.csv.gz",
+  "patient_min_cells": 100,
+  "bootstrap": 2000,
+  "bootstrap_seed": 20261023,
+  "selected": [
+    {
+      "collection": "Reactome",
+      "pathway": "REACTOME_MAPK1_MAPK3_SIGNALING"
+    },
+    {
+      "collection": "Reactome",
+      "pathway": "REACTOME_MAPK_FAMILY_SIGNALING_CASCADES"
+    },
+    {
+      "collection": "Reactome",
+      "pathway": "REACTOME_DEGRADATION_OF_DVL"
+    },
+    {
+      "collection": "Reactome",
+      "pathway": "REACTOME_FORMATION_OF_PARAXIAL_MESODERM"
+    }
+  ],
+  "interpretation": "Descriptive association along inferred phase, not measured 24-hour rhythm; paired p exploratory, pathway selection uses same data"
+}

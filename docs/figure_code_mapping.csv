@@ -1,0 +1,29 @@
+figure,panel,content,release_script,source_data_file,verification_status
+Figure1,1A,inputs & preprocessing schematic,scripts/figure_reproduction/make_fig1a_inputs_preprocessing_v2.py,none (manual schematic),MANUAL_SCHEMATIC
+Figure1,1B,corrected B0 model architecture,scripts/figure_reproduction/make_fig1b_corrected_b0_model_v2.py,none (manual schematic; formulas = src/anchorphase/model/katv2_engine.py),MANUAL_SCHEMATIC
+Figure1,1C,posterior outputs & uncertainty,scripts/figure_reproduction/make_fig1c_posterior_outputs_uncertainty_v2.py,none (manual schematic),MANUAL_SCHEMATIC
+Figure1,1D,circular phase map,scripts/figure_reproduction/make_fig1d_circular_phase_map_v2.py,none (manual schematic),MANUAL_SCHEMATIC
+Figure2,2A,external validation B0 vs C2 median circular AE,scripts/figure_reproduction/make_fig2_final_panels.py,source_data/Figure2/ST03_EXTERNAL_VALIDATION_TABLE.csv,EXACT_MATCH
+Figure2,2B,falsification controls & permutation evidence,scripts/figure_reproduction/make_fig2_final_panels.py,source_data/Figure2/ST03B_EXTERNAL_FALSIFICATION.csv,EXACT_MATCH
+Figure2,2C,GSE145197 true ZT vs inferred phase + gene trajectories,scripts/figure_reproduction/make_fig2_final_panels.py,source_data/Figure2/ST03C_EXTERNAL_SELECTED_GENES.csv,EXACT_MATCH
+Figure2,2D,GSE223109 failure mode (blood contamination),scripts/figure_reproduction/make_fig2_final_panels.py,source_data/Figure2/ST03C_EXTERNAL_SELECTED_GENES.csv,EXACT_MATCH
+Figure3,3A,sample-level phase reconstruction,scripts/figure_reproduction/make_fig3_final_panels.py,source_data/Figure3/ST05C_SAMPLE_STATE.csv,EXACT_MATCH
+Figure3,3B,evidence strength vs sample error,scripts/figure_reproduction/make_fig3_final_panels.py,source_data/Figure3/ST05_SAMPLE_UNCERTAINTY_CALIBRATION.csv,EXACT_MATCH
+Figure3,3C,confidence-guided selective inference,scripts/figure_reproduction/make_fig3_final_panels.py,source_data/Figure3/ST05_SAMPLE_UNCERTAINTY_CALIBRATION.csv,EXACT_MATCH
+Figure3,3D,transcriptome-level recovery,scripts/figure_reproduction/make_fig3_final_panels.py,source_data/Figure3/ST05B_TRANSCRIPTOME_CONCORDANCE.csv,EXACT_MATCH
+Figure4,4A,core clock fitted curves Normal vs Tumor (5-gene subset of 17x2 parent),scripts/colorectal_cancer_GSE166555/GSE166555_FIG4_DETERMINISTIC_COSINOR_V1.py,analyses/colorectal_cancer_GSE166555/03_CORE17_rhythmicity_summary_long.csv,HIGH_CONFIDENCE_RECONSTRUCTION
+Figure4,4B,alluvial Normal->Tumor phase-associated membership,scripts/colorectal_cancer_GSE166555/FIG4A_alluvial_final.py,analyses/colorectal_cancer_GSE166555/FIG4A_alluvial_counts.json,EXACT_MATCH
+Figure4,4C+4D,Normal-only vs Tumor-only ORA,scripts/colorectal_cancer_GSE166555/FIG4D_GSE166555_UNIQUE_RHYTHMIC_ORA.py,analyses/colorectal_cancer_GSE166555/{Normal_tumor}_only_ALL_TESTED_pathways.csv + source_data/Figure4/ST06*.csv,EXACT_MATCH
+Figure4,4E,top-4 tumor-only pathway gene heatmaps,scripts/colorectal_cancer_GSE166555/FIG4D_TumorOnly_Top4_GeneHeatmap.py,analyses/colorectal_cancer_GSE166555/Tumor_only_ALL_TESTED_pathways.csv,EXACT_MATCH
+Figure5,5A,evidence funnel counts,scripts/colorectal_cancer_GSE166555/FIG45_V7_COMPLETE_REPLOT.py,source_data/Figure5/ST08_MECHANISM_AUDIT_MANIFEST.json,EXACT_MATCH
+Figure5,5B,mechanism-linked target landscape,scripts/colorectal_cancer_GSE166555/FIG45_V7_COMPLETE_REPLOT.py,source_data/Figure5/ST08_MECHANISM_AUDIT_MANIFEST.json,EXACT_MATCH
+Figure5,5C,six focus targets paired amplitude CI,scripts/colorectal_cancer_GSE166555/FIG45_V7_COMPLETE_REPLOT.py,analyses/colorectal_cancer_GSE166555/FIG45_FOCUS_GENE_PATIENT_BOOTSTRAP.csv,EXACT_MATCH
+Figure5,5D,mechanism groups lollipop,scripts/colorectal_cancer_GSE166555/FIG45_V7_COMPLETE_REPLOT.py,source_data/Figure5/ST08_MECHANISM_AUDIT_MANIFEST.json,EXACT_MATCH
+Figure5,5E,four target fitted curves,scripts/colorectal_cancer_GSE166555/FIG45_V7_COMPLETE_REPLOT.py,source_data/Figure5/ST08_MECHANISM_AUDIT_MANIFEST.json,EXACT_MATCH
+Figure5,5F,leave-one-patient-out agreement,scripts/colorectal_cancer_GSE166555/FIG45_V7_COMPLETE_REPLOT.py,source_data/Figure5/ST08C_TARGET_LOO_AND_UNCERTAINTY.csv,EXACT_MATCH
+Figure5,5G,ChEMBL target-molecule network,scripts/colorectal_cancer_GSE166555/FIG5E_NETWORK_MATCH_FIG5B.py,source_data/Figure5/ST09_CHEMBL_NETWORK_EDGES_AUDIT.csv,EXACT_MATCH
+SuppFig1,S1,12 clock-output gene curves,scripts/colorectal_cancer_GSE166555/GSE166555_FIG4_DETERMINISTIC_COSINOR_V1.py,analyses/colorectal_cancer_GSE166555/04_CORE17_curves_long.csv,HIGH_CONFIDENCE_RECONSTRUCTION
+SuppFig2,S2,all-pathway paired harmonic (nominal P),scripts/colorectal_cancer_GSE166555/GSE166555_ALL_PATHWAYS_NOMINAL_P_ONLY.py,source_data/SupplementaryFigure2/ST07_PATHWAY_PAIRED_HARMONIC_TESTS.csv + analyses/.../01_ALL_PATHWAY_PAIRED_HARMONIC_TESTS.csv,EXACT_MATCH
+SuppFig3,S3,top-4 tumor-only pathway curves,scripts/colorectal_cancer_GSE166555/FIG4D_TumorOnly_Top4.py,analyses/colorectal_cancer_GSE166555/Tumor_only_ALL_TESTED_pathways.csv,EXACT_MATCH
+SuppFig4,S4,gene-level Normal->Tumor remodeling,scripts/supplementary_discovery/supp_discovery_01_{analysis,figure}.py,source_data/SupplementaryFigure4/*.csv,EXACT_MATCH
+SuppFig5,S5,program coordination & complementarity,scripts/supplementary_discovery/supp_discovery_02_figure.py,source_data/SupplementaryFigure5/*.csv,EXACT_MATCH

@@ -1,0 +1,3 @@
+Dataset,N_cells,N_samples,B0_median_AE,C1_median_AE,C2_median_AE,Tempo_median_AE,C2_minus_B0_gain,C2_vs_Tempo_gain,C2_alpha,oracle_rotation_h,Spearman_R_vs_AE,tissue,improves_B0_ge_0.20
+GSE145197,18378,10,3.498,3.021,3.026,NOT_RUN,0.472,,0.2,1.01,-0.279,liver hepatocytes,True
+GSE223109,23990,18,3.101,4.443,3.449,4.182,-0.348,0.733,0.5,0.92,-0.179,mouse dorsal dermis,False

@@ -1,0 +1,19 @@
+{
+  "sample_state": "COMPLETE",
+  "coherence": "COMPLETE",
+  "desynchrony": "COMPLETE",
+  "gene_rhythm": "COMPLETE",
+  "program_rhythm": "COMPLETE",
+  "target_profile": "COMPLETE",
+  "therapeutic_window": "COMPLETE",
+  "uncertainty_propagation": "COMPLETE",
+  "figure4": "COMPLETE",
+  "figure5": "COMPLETE",
+  "celltype_state": "COMPLETE (module; cohorts lack multi-level annotation - exercised via tests/synthetic)",
+  "phase_qc": "COMPLETE",
+  "tests": "PASS (42/42)",
+  "synthetic_validation": "PASS (6/6)",
+  "frozen_b0_modified": false,
+  "tabula_used_in_manuscript_analysis": false,
+  "source_package_written": false
+}

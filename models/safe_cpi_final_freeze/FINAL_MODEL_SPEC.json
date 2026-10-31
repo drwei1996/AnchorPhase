@@ -1,0 +1,20 @@
+{
+  "FINAL_MODEL": "C2_SAFE_CPI",
+  "spec": "corrected anchored B0 posterior + SAFE-CPI information head: cross-fitted conditional phase information (posterior entropy reduction on the frozen B0 posterior), non-redundant phase-covering greedy panel (K=40, lambda=0.5, beta=0.5), trust-region evidence gate v2; sample-blocked LOSO",
+  "hierarchy_outcomes": {
+    "C1_CPI": "OK",
+    "C2_SAFE_CPI": "OK",
+    "C3_pooled": "OK",
+    "C3_state": "OK",
+    "C3_lineage": "OK",
+    "C3_full": "OK"
+  },
+  "bands": {
+    "C1_CPI": "STRONG",
+    "C2_SAFE_CPI": "STRONG",
+    "C3_pooled": "STRONG",
+    "C3_state": "STRONG",
+    "C3_lineage": "STRONG",
+    "C3_full": "STRONG"
+  }
+}

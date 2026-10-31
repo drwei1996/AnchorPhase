@@ -1,0 +1,11 @@
+gene,drug_name,mechanism_class,preferred_reference_present,source
+ABCB1,ENCEQUIDAR,Exposure / resistance,True,Observed ChEMBL match
+ABCB1,BIRICODAR,Exposure / resistance,True,Observed ChEMBL match
+CDA,CEDAZURIDINE,Exposure / resistance,True,Observed ChEMBL match
+MGLL,ELCUBRAGISTAT,Direct / investigational,True,Observed ChEMBL match
+PLA2G2A,VARESPLADIB METHYL,Direct / multi-PLA2,True,Observed ChEMBL match
+PLA2G2A,VARESPLADIB,Direct / multi-PLA2,True,Observed ChEMBL match
+SLC9A3,SQUALAMINE LACTATE,Non-oncology physiological,False,Observed ChEMBL match
+SLC9A3,TENAPANOR HYDROCHLORIDE,Non-oncology physiological,False,Observed ChEMBL match
+MAP2K2,BINIMETINIB,Direct / oncology pathway,True,Observed ChEMBL match
+MAP2K2,WX-554,Direct / oncology pathway,True,Observed ChEMBL match

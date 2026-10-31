@@ -1,0 +1,100 @@
+{
+  "source": "external_repos/tempo-main/data/clock_aorta_acrophase_prior.csv",
+  "source_sha256": "9c4d28a7b0ebbb32bed3489509c6ad6f6c2aad3ca6ceab81c1a1e4a4d2ad24d9",
+  "columns": [
+    "gene",
+    "prior_acrophase_loc",
+    "prior_acrophase_95_interval"
+  ],
+  "n_genes_total_in_asset": 18,
+  "genes_used": 17,
+  "priors": {
+    "Arntl": {
+      "loc_rad": 0.0,
+      "loc_h": 0.0,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Bhlhe41": {
+      "loc_rad": 2.356194490192345,
+      "loc_h": 9.0,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Clock": {
+      "loc_rad": 0.0,
+      "loc_h": 0.0,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Cry1": {
+      "loc_rad": 4.71238898038469,
+      "loc_h": 18.0,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Cry2": {
+      "loc_rad": 3.141592653589793,
+      "loc_h": 12.0,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Dbp": {
+      "loc_rad": 2.6179938779914944,
+      "loc_h": 10.0,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Fbxo21": {
+      "loc_rad": 1.832595714594046,
+      "loc_h": 7.0,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Hlf": {
+      "loc_rad": 3.141592653589793,
+      "loc_h": 12.0,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Nfil3": {
+      "loc_rad": 5.497787143782138,
+      "loc_h": 21.0,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Npas2": {
+      "loc_rad": 0.0,
+      "loc_h": 0.0,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Nr1d1": {
+      "loc_rad": 2.0943951023931957,
+      "loc_h": 8.000000000000002,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Nr1d2": {
+      "loc_rad": 2.6179938779914944,
+      "loc_h": 10.0,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Per1": {
+      "loc_rad": 2.8797932657906435,
+      "loc_h": 10.999999999999998,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Per2": {
+      "loc_rad": 3.665191429188092,
+      "loc_h": 14.0,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Per3": {
+      "loc_rad": 3.141592653589793,
+      "loc_h": 12.0,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Rorc": {
+      "loc_rad": 4.974188368183839,
+      "loc_h": 19.0,
+      "interval95_rad": 0.2617993877991494
+    },
+    "Tef": {
+      "loc_rad": 3.141592653589793,
+      "loc_h": 12.0,
+      "interval95_rad": 0.2617993877991494
+    }
+  },
+  "phi_g_usage": "phi_g = prior_acrophase_loc (rad) FIXED; never trained in B0",
+  "no_GSE206583_ZT_in_phi": true
+}

@@ -1,0 +1,14 @@
+{
+  "nb_closed_form": "PASS",
+  "b0_exact_reduction_frozen_zero": "PASS",
+  "mstep_improves[b0": "-5025.44->-5024.70 PASS",
+  "mstep_improves[b1_lineage": "-5025.44->-5022.41 PASS",
+  "mstep_improves[b1_free": "-5025.44->-5021.75 PASS",
+  "mstep_improves[b2_state": "-5025.44->-5016.03 PASS",
+  "mstep_improves[b3_wave": "-5025.44->-5024.70 PASS",
+  "mstep_improves[b4_strength": "-5025.44->-5024.57 PASS",
+  "mstep_improves[b5_sample": "-5025.44->-5024.70 PASS",
+  "b4_centering_mean_log_c": "PASS",
+  "b1_nullworld_uM_max_abs": 0.05464745451796425,
+  "b1_nullworld_uA_max_abs": 0.13489593957834867
+}

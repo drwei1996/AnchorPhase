@@ -1,0 +1,7 @@
+{
+  "Normal": 3708,
+  "Tumor": 3823,
+  "shared": 2097,
+  "normal_only": 1611,
+  "tumor_only": 1726
+}

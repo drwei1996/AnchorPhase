@@ -1,0 +1,10 @@
+{
+  "reference_gene": "Arntl (BMAL1)",
+  "reference_phase": "prior_acrophase_loc = 0.0 rad == 0.0 h",
+  "radian_to_hour": "theta_h = theta_rad * 24 / (2*pi)",
+  "direction_of_increasing_phase": "theta increases along the circadian cycle in cos(theta - phi_g); prior locs place e.g. Per2 at 3.665 rad ~ 14.0 h, Nfil3 at 5.498 rad ~ 21.0 h",
+  "ZT_interpretation": "a cell with posterior phase theta_h is inferred to be at circadian time theta_h under the Tempo aorta prior convention (same convention under which our frozen Tempo reproduction achieved raw sample median AE 1.18 h)",
+  "prior_source": "Tempo official aorta acrophase prior asset (hash in ACROPHASE_PRIOR_FREEZE.json)",
+  "likelihood_phase_term": "A_g * cos(theta_i - phi_g), theta in radians over [0, 2*pi) mapped to 48 bins of 0.5 h",
+  "written_before_any_private_ZT_evaluation": true
+}

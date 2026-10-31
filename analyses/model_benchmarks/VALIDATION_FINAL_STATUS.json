@@ -1,0 +1,36 @@
+{
+  "extension_v1_modified": false,
+  "source_package_modified": false,
+  "freeze_verification": {
+    "ext_v1_code_changed": 0,
+    "ext_v1_total_files_now": 153,
+    "source_package_changed": 0,
+    "source_package_total_files_now": 1911
+  },
+  "cell_number_robustness": "COMPLETE",
+  "cell_number_stability": {
+    "GSE145197": [
+      "100",
+      "250",
+      "500",
+      "1000"
+    ],
+    "GSE223109": [
+      "250",
+      "500",
+      "1000"
+    ],
+    "criterion": "median |dev from full-cell estimate| <= 0.5 h AND p95 <= 1.0 h (fixed a priori; descriptive of tested cohorts only, NOT a clinical threshold)"
+  },
+  "uncertainty_calibration": "COMPLETE",
+  "risk_coverage": "COMPLETE",
+  "transcriptome_concordance": "COMPLETE",
+  "permutation_controls": "COMPLETE",
+  "additional_cohort": "NO NEW EXTERNAL COHORT ELIGIBLE (GSE206583 development-involved; GSE292219 absent); sensitivity refit DEFERRED_RUNTIME (>4h local gate; env complete, runner ready)",
+  "tempo_liver": "TECHNICALLY_UNRESOLVED_ON_LOCAL_HARDWARE",
+  "scritmo": "NOT_FEASIBLE_FAIRLY (requires labeled training reference unavailable for external cohorts)",
+  "target_evidence": "COMPLETE (9/18 with DGIdb claims)",
+  "paper_claim_audit": "COMPLETE",
+  "tests": "PASS 21/21",
+  "overall": "COMPLETE"
+}

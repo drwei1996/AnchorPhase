@@ -1,0 +1,9 @@
+{
+  "model": "B0_corrected_frozen_engine",
+  "n_cells": 18378,
+  "em_cycles": 50,
+  "runtime_sec": 1205,
+  "engine_sha256": "332c6000a8853eca23fe61f80ba9a53ba71b2a6b065833407ddcba01509091c4",
+  "priors": "frozen aorta acrophase (Task10A)",
+  "TRUE_ZT_READ": false
+}

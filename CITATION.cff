@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "AnchorPhase: anchored negative-binomial inference of cellular and sample-level transcriptional phase from sparse single-cell RNA-seq data"
+type: software
+authors:
+  - name: "AnchorPhase authors"
+version: 1.0.0
+date-released: "2026-10-30"
+license: MIT
+repository-code: "https://github.com/PLACEHOLDER-ORG/AnchorPhase"
+keywords:
+  - circadian clock
+  - single-cell RNA-seq
+  - phase inference
+  - negative binomial
+  - computational methods

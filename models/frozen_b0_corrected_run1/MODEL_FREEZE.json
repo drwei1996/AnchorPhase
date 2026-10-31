@@ -1,0 +1,18 @@
+{
+  "model": "KATv2-B0-corrected",
+  "tag": "RUN1",
+  "perturbation": null,
+  "prediction_sha256": "a2482e2cf3ca0df91a2eb2392ddc4f6a07c7668f7b9f361bf702522cb9e833f0",
+  "config_sha256": "e2fe3fb519f1a909ba5e020aaeb9ed9e2e3fcf6677d2e2f96b67ddb9ca012a15",
+  "gene_param_sha256": "0911cb1f2c49978253846fd8d2aaae03f67c8c7a03ba392aed4e06ce7f62f030",
+  "posterior_sha256": "71abe3862e516efc5fd22c0173a14577843b69653fccc0fc051c1b34cad04515",
+  "script_sha256": "332c6000a8853eca23fe61f80ba9a53ba71b2a6b065833407ddcba01509091c4",
+  "geneset_sha256": "aa7a60395bcac842d38f3e2e89e609246c33deb0400eb973ff733ad8bbc3d12d",
+  "size_factor_sha256": "33d5eabfc4b0584841dc9f688e63eb386e1f6e8182518e60ab786d2f844d98e5",
+  "phi_prior_sha256": "51bf3b34ada40ca81ed1ea9bb0b96f031b3d7ccb4739b05fc7ca111d18e3e145",
+  "em_cycles": 44,
+  "runtime_sec": 1619,
+  "TRUE_ZT_READ": false,
+  "PREDICTIONS_FROZEN": true,
+  "timestamp": "2026-10-07 14:30:21"
+}

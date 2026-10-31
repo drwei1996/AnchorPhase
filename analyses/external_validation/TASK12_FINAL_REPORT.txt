@@ -1,0 +1,87 @@
+TASK 12 FINAL REPORT — FROZEN EXTERNAL VALIDATION
+==================================================
+
+MODEL UNDER VALIDATION: C2_SAFE_CPI (frozen from Task 11B; development 1.388 h)
+Pipeline: identical frozen stages per cohort (B0 cohort refit allowed; algorithm
+and all hyperparameters unchanged; all predictions blind-frozen and hashed
+before any label access).
+
+RESULTS (per-dataset, never pooled)
+-----------------------------------
+GSE145197 (mouse liver hepatocytes, 18,378 cells, 10 samples, 4 ZT levels):
+  B0  3.498 h   C1 3.021 h   C2 3.026 h   alpha=0.2   Tempo NOT_RUN_TECHNICAL
+  C2-B0 gain +0.472 h. Sample-level: B0 1.638, C2 1.770.
+  Falsification: F1 perm 11.8x separation PASS; F2 matched panels (3.41-3.73)
+  all worse than C1 PASS; wrong-anchor +8h degrades PASS.
+  Panel biology: Pck1, Lpin1, Mat1a, Slc7a2 ... genuine hepatic circadian
+  output genes - the information-selection PRINCIPLE generalized to a new
+  tissue and selected the right biology.
+
+GSE223109 (mouse dorsal dermis, 23,990 cells, 18 samples, 18 ZT levels):
+  B0  3.101 h   C1 4.443 h   C2 3.449 h   alpha=0.5   Tempo 4.182 h
+  C2-B0 "gain" -0.348 h (degradation). Sample-level: B0 1.654, C2 1.902.
+  Falsification: F1 perm 26.8x PASS (selection is far from random) but
+  F2 matched panels (min 3.236) BEAT the real panel (C1 4.443) -> FAIL:
+  the selected information is not phase information.
+  Panel biology: Hba-a1, Hba-a2, Hbb-bs, Alas2 - hemoglobin/erythroid
+  contamination. Mechanism: blood fraction varies across samples and
+  therefore correlates with ZT assignment; per-sample-blocked cross-fitting
+  does not remove a confound that is CONSISTENT across folds. The head
+  learned sample identity, not cell-intrinsic circadian phase.
+  The trust-region gate damped the damage by 74% (C1 -1.342 -> C2 -0.348)
+  but its criteria (shift<=0.75h, R non-decreasing) are satisfied by
+  confidently-wrong confounds, so it did not refuse.
+
+VERDICT (frozen decision tree)
+------------------------------
+GSE145197: IMPROVED.  GSE223109: DEGRADED (materially harmful + F2 FAIL).
+EXTERNAL_VALIDATION = FAILED (PARTIAL excluded: requires second cohort
+"neutral but not materially harmful").
+CASE C applies: SAFE-CPI extension fails external validation as a universal
+default -> KATv2 REVERTS TO ANCHORED B0.
+  - Corrected anchored B0 is externally strong: 3.10 / 3.50 h cell median AE
+    on two foreign tissues under aorta priors, with clean anchoring
+    (oracle rotations 0.9-1.0 h), and beats Tempo (4.18) where comparable.
+  - SAFE-CPI remains a development-validated OPTION with an explicit
+    deployment rule discovered by this task: admit the information head only
+    when the per-cohort F2 matched-panel control passes (it did on aorta/SMC
+    and liver; it failed on contaminated dermis). This admission test is part
+    of the falsification framework, not a new hyperparameter.
+
+SCIENTIFIC FINDINGS (reported, not tuned)
+-----------------------------------------
+1. Conditional phase-information selection generalized ACROSS TISSUE
+   (liver) when the auxiliary transcriptome carries genuine clock outputs.
+2. The same selector captures cohort-level confounds (blood contamination)
+   when it does not; entropy reduction + trust region cannot distinguish
+   "informative" from "sample-identity" signal alone; the matched-panel
+   control can, and should be the admission gate.
+3. No post-hoc rescue was performed: no K, alpha, threshold, filter, or
+   prior was changed after either unblinding.
+
+HOLDOUTS: both were fully consumed by this task as preregistered.
+
+TASK12_FINAL_VERDICT fields:
+{
+  "TASK12_COMPLETE": true,
+  "MODEL": "C2_SAFE_CPI",
+  "GSE145197_STATUS": "IMPROVED (+0.472 h; top genes Pck1/Lpin1/Mat1a = genuine hepatic clock outputs; F1+F2 PASS)",
+  "GSE223109_STATUS": "DEGRADED (blood-contamination capture: top CPI genes Hba-a1/Hba-a2/Hbb-bs/Alas2; F2 matched-panel control FAILED)",
+  "BOTH_HOLDOUTS_IMPROVE_B0": false,
+  "BOTH_HOLDOUTS_BEAT_TEMPO": false,
+  "ANCHORING_PASS": true,
+  "CALIBRATION_PASS": true,
+  "EXTERNAL_VALIDATION": "FAILED",
+  "FINAL_KATV2_STATUS": "CASE C: the SAFE-CPI extension fails external validation as a universal default; KATv2 REVERTS TO ANCHORED B0 (corrected B0 externally strong: 3.10/3.50 h cell AE on foreign tissues with aorta priors; beats Tempo 4.18 where comparable). SAFE-CPI remains a development-validated option with cohort dependence: deploy only when its per-cohort falsification controls (especially the F2 matched-panel admission test) pass; the trust-region gate dampened the damage by 74% (C1 -1.342 h -> C2 -0.348 h) but did not prevent confound capture on GSE223109.",
+  "gains": {
+    "GSE145197": {
+      "dC2_B0": 0.472
+    },
+    "GSE223109": {
+      "dC2_B0": -0.348,
+      "dC2_Tempo": 0.733
+    }
+  },
+  "verdict_correction_note": "auto-classified PARTIAL by the summary script's simplified rule; corrected at report time to FAILED per the frozen criteria ('materially harmful' exclusion from PARTIAL: GSE223109 degraded -0.348 h and its F2 matched-panel control FAILED). No model change involved.",
+  "tempo_note": "Tempo NOT_RUN_TECHNICAL on GSE145197 (structural de-novo cycler failure, 3 documented attempts); Tempo on GSE223109 = 4.182 h (both B0 3.101 and C2 3.449 beat it)."
+}
